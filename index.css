@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(332deg,rgba(0, 12, 43, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 100dvh;
+}
+
+.page{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+    
+}
+
+.imagemEdu{
+    background-image: url('./files/img/1.jpg');
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100%;
+    border: blue;
+    border-style: solid;
+}
+
+.textoContainarInicio{
+    display: flex;
+    flex-direction: column;
+    
+}
