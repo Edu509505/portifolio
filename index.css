@@ -1,43 +1,231 @@
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    background: linear-gradient(332deg,rgba(0, 12, 43, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    height: 100dvh;
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  background: linear-gradient(
+    332deg,
+    rgba(0, 12, 43, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  align-items: center;
+  padding-top: 50px;
 }
 
-.page{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.page {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.containerInicio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:20px
-    
+.containerInicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.imagemEdu{
-    background-image: url('./files/img/1.jpg');
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagemEdu {
+  background-image: url("./files/img/1.jpg");
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  border: blue;
+  border-style: solid;
+}
+
+.textoContainarInicio {
+  display: flex;
+  flex-direction: column;
+}
+.textoContainarInicio,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.buttonGitHub {
+  border-radius: 20px;
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+  background-color: rgb(39, 39, 39);
+  border-style: none;
+  color: white;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+.buttonGitHub:hover {
+  background-color: white;
+  color: rgb(39, 39, 39);
+}
+
+.buttonLinkedin {
+  border-radius: 20px;
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+  background-color: rgb(0, 74, 170);
+  border-style: none;
+  color: white;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+.buttonLinkedin:hover {
+  background-color: white;
+  color: rgb(0, 74, 170);
+}
+
+.projetos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projeto_1 {
+  display: flex;
+  gap: 20px;
+}
+
+.imagemProjeto1 {
+  background-image: url("./files/img/2.png");
+  width: 900px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.descricaoProjeto1 {
+  gap: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projeto_2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.imagemProjeto2 {
+  background-image: url("./files/img/3.png");
+  width: 900px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.descricaoProjeto2 {
+  gap: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  width: 900px;
+  height: 500px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 950px) {
+  .imagemProjeto1 {
+    width: 700px;
+    height: 400px;
+  }
+  .imagemProjeto2 {
+    width: 700px;
+    height: 400px;
+  }
+  .video {
+    width: 700px;
+    height: 400px;
+  }
+  .imagemEdu {
+    background-image: url("./files/img/1.jpg");
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .imagemProjeto1 {
+    width: 500px;
     height: 300px;
-    width: 300px;
-    background-position: center;
-    background-size: contain;
-    border-radius: 100%;
-    border: blue;
-    border-style: solid;
+  }
+  .imagemProjeto2 {
+    width: 500px;
+    height: 300px;
+  }
+  .video {
+    width: 500px;
+    height: 300px;
+  }
+  .imagemEdu {
+    background-image: url("./files/img/1.jpg");
+    height: 150px;
+    width: 150px;
+  }
 }
 
-.textoContainarInicio{
-    display: flex;
+@media (max-width: 660px) {
+  .conteiner {
     flex-direction: column;
-    
+  }
+}
+
+@media (max-width: 550px) {
+  .imagemProjeto1 {
+    width: 350px;
+    height: 200px;
+  }
+  .imagemProjeto2 {
+    width: 350px;
+    height: 200px;
+  }
+  .video {
+    width: 350px;
+    height: 200px;
+  }
+  .imagemEdu {
+    background-image: url("./files/img/1.jpg");
+    height: 100px;
+    width: 100px;
+  }
 }
